@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The City-State of Elis</title>
+<meta name="description" content="Olympic aficionados will recognize Elis as the city-state holding the Olympic Games in Olympia.">
+<meta property="og:title" content="The City-State of Elis">
+<meta property="og:description" content="Olympic aficionados will recognize Elis as the city-state holding the Olympic Games in Olympia.">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#edefe9;--paper:#f8f9f6;--ink:#1b2a30;--teal:#0b6e85;--hi:#e3bf63;--line:rgba(27,42,48,.18);--ha:#0a3f50;--hb:#0e6a82;--hink:#f3efe2;--shade:rgba(10,40,50,.45);--display:"Marcellus","Palatino Linotype",Palatino,Georgia,serif;--text:"Literata",Charter,"Iowan Old Style",Georgia,"Times New Roman",serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b161b;--paper:#12232b;--ink:#e8e4d6;--teal:#56c2da;--line:rgba(232,228,214,.18);--ha:#06181f;--hb:#0a3646;--hink:#f1ecdc;--shade:rgba(0,0,0,.65);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b161b;--paper:#12232b;--ink:#e8e4d6;--teal:#56c2da;--line:rgba(232,228,214,.18);--ha:#06181f;--hb:#0a3646;--hink:#f1ecdc;--shade:rgba(0,0,0,.65);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--ha)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);-webkit-text-size-adjust:100%}
+img{max-width:100%;height:auto}
+.hero-in,.wrap,.map{padding-inline:1.25rem}
+@supports (padding:max(1px,2px)){.hero-in,.wrap,.map{padding-inline:max(1.25rem,env(safe-area-inset-left,0px)) max(1.25rem,env(safe-area-inset-right,0px))}}
+
+.hero{background:radial-gradient(38rem 24rem at 80% 50%,rgba(227,191,99,.22),transparent 70%),linear-gradient(135deg,var(--ha),var(--hb));color:var(--hink)}
+.hero-in{max-width:62rem;margin:0 auto;padding-block:clamp(2.8rem,8vw,5.5rem);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(1.5rem,5vw,4rem)}
+h1{margin:0;font:400 clamp(2.1rem,5.6vw,3.9rem)/1.12 var(--display);letter-spacing:.015em;text-wrap:balance}
+h1::after{content:"";display:block;width:5.5rem;height:2px;margin-top:1.5rem;background:linear-gradient(90deg,var(--hi),transparent)}
+.coin{margin:0;width:clamp(11rem,32vw,20rem);text-align:center}
+.disc{filter:drop-shadow(0 1rem 1.6rem rgba(0,0,0,.5))}
+.disc img{display:block;width:100%;clip-path:circle(48.2%)}
+.coin figcaption{margin-top:1.1rem;font:italic .85rem/1.5 var(--text);color:rgba(243,239,226,.8)}
+.key{height:24px;border-top:1px solid rgba(227,191,99,.3);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23e3bf63' stroke-width='1.2'%3E%3Cpath d='M0 14V2H14V14H6V8H10M14 14H16'/%3E%3C/svg%3E") repeat-x;background-size:24px 24px;opacity:.75}
+
+main{padding-top:clamp(2.6rem,6vw,4.2rem)}
+.wrap{max-width:43rem;margin:0 auto}
+.wrap p{margin:0 0 1.6rem;font-size:clamp(1.05rem,1rem + .3vw,1.18rem);line-height:1.8;text-wrap:pretty}
+.wrap .lead{font-size:clamp(1.2rem,1.08rem + .6vw,1.4rem);line-height:1.62}
+.d{color:var(--teal);font-weight:600;white-space:nowrap}
+.map{max-width:62rem;margin:2.6rem auto 3.2rem}
+.mat{padding:.6rem;background:var(--paper);border:1px solid var(--line);border-radius:.4rem;box-shadow:0 1.4rem 2.6rem -1.2rem var(--shade)}
+.mat img{display:block;width:100%}
+.foot{margin-top:3.5rem;padding-top:1rem;background:var(--ha)}
+.foot .key{transform:scaleY(-1)}
+::selection{background:var(--hi);color:#1b1408}
+@media (max-width:40rem){.hero-in{grid-template-columns:1fr}.coin{margin:0 auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-in">
+    <h1>The City-State of Elis</h1>
+    <figure class="coin">
+      <div class="disc"><img src="{{COIN}}" width="{{CW}}" height="{{CH}}" alt="Coin of Elis: a golden winged thunderbolt between the letters F and A on a turquoise field, ringed by chariot, athlete, eagle and Zeus motifs"></div>
+      <figcaption>Coin of Elis (showing ‘F A’ / Faleion and winged thunderbolt)</figcaption>
+    </figure>
+  </div>
+  <div class="key" aria-hidden="true"></div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="lead">Olympic aficionados will recognize Elis as the city-state holding the Olympic Games in Olympia. Elis was a Greek city-state in the northwest of the Peloponnesian peninsula and was founded somewhere in the <span class="d">5th century BC</span>. Elis quickly became an important regional power, claiming hegemony over Olympia, the Pisatis in the south, and Lepreon in Triphylia further down the coast.</p>
+  </div>
+
+  <figure class="map">
+    <div class="mat"><img src="{{MAP}}" width="{{MW}}" height="{{MH}}" alt="Map of ancient Greece with the territory of Elis in the northwest Peloponnese highlighted in teal, including Olympia, bordered by Achaea, Arcadia and Messenia"></div>
+  </figure>
+
+  <div class="wrap">
+    <p>According to mythology, the ancient Eleans traced their ancestry to the mythological Dorian invasion and the legendary King Oxylus, under whom the first unification of Elis purportedly took place around the <span class="d">11th century BC</span>; however, the physical capital city of Elis wasn’t formally consolidated into a single urban center until around <span class="d">471 BC</span>. Initially, the Olympic Games, which were re-established in <span class="d">776 BC</span>, were administered by the neighboring city of Pisa. Unwilling to accept Pisan control over such a prestigious religious and cultural institution, Elis contested this authority. Backed by Spartan support, the Eleans successfully seized control of the sanctuary of Olympia around <span class="d">576 BC</span>, ultimately destroying the city of Pisa entirely by <span class="d">572 BC</span>.</p>
+    <p>Despite Elis being a staunch ally of the Spartans and joining the Spartan-led Peloponnesian League early, the relationship fractured during the Peloponnesian War as Sparta formally recognized Lepreon as independent. Outraged by Sparta’s recognition of the separatists, Elis switched allegiance and joined the Athenian-led Quadruple Alliance in response. Furthermore, Elis refused to let the Spartan King Agis join the sacrificial ceremony at the Olympics.</p>
+    <p>Eventually, the Spartan-led Peloponnesian League won the war and sought retribution against their former ally. Around <span class="d">402–400 BC</span>, Sparta issued an ultimatum to Elis, demanding that Elis grant total independence to its subject towns. When Elis refused, King Agis led successive invasions into Elean territory. Although the Eleans managed a strong military defense bolstered by 1,000 elite Aetolian mercenaries, exhaustion from the sustained Spartan devastation campaigns forced them to surrender. They were subsequently compelled to cede vast amounts of territory, ending Elis’s status as a regional power for good.</p>
+    <p>During the Macedonian invasion, Elis sided with the Macedonians but refused to fight other Greeks and renounced the alliance after the death of Alexander the Great. Elis joined the Aetolian League and frequently came into conflict with the Achaian League. However, around this time, a powerful non-Greek power started to intervene in their affairs: the Roman Republic. The Romans masterfully played into the existing divisions and initially joined the Aetolian League’s side before turning against them and conquering most of Greece, Elis included.</p>
+    <p>When Rome embraced Christianity during Late Antiquity, and in <span class="d">391 AD</span> as part of a wider campaign against paganism, Emperor Theodosius outlawed the Olympics under the pretext of it being a pagan tradition and dismantled Olympia’s sanctuary. Elis, as a province, suffered greatly afterward, and the Olympic Games would only return in <span class="d">1896</span> as an international competition rather than a pan-Hellenic one.</p>
+  </div>
+</main>
+
+<footer class="foot"><div class="key" aria-hidden="true"></div></footer>
+</body>
+</html>
